@@ -1,0 +1,17 @@
+DOM Transversal
+I typed in  $(“h3”).first() on the Javascript Console to display the first element's heading "Ingredients"
+
+
+CSS Change
+I changed the colors from garnet when hoovered over and gold when not hoovered over using the 
+
+$("h3").hover(function(){
+ $(this).css("background-color", "maroon");
+ }, function(){
+ $(this).css("background-color", "gold");
+});
+
+
+Animation:
+I animated the <p> when hoovered over to expand the text quickly using 
+$(event.currentTarget).next().animate( {height: ‘toggle’}, “fast”);
